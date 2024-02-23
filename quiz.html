@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Easy Kviz </title>
+
+        <link rel="stylesheet" href="quiz.css">
+    </head>
+
+    <body>
+        <div class="okvir_pitanja">
+            <div class="prog_bar">
+                <progress id="progress_bar" max="100" value="0">0</progress>
+                <p id="bar_counter">0/5 pitanja</p>   
+            </div>
+            
+            <div class="pitanja">
+                <form id="sva_pitanja">
+                    <p id="pitanje"></p>
+                    <input type="radio" name="check" id="check_1" value="A" autocomplete="off" required>
+                    <label id="lab_1" for="check_1"></label><br>
+                    
+                    <input type="radio" name="check" id="check_2" value="B" autocomplete="off">
+                    <label id="lab_2" for="check_2"></label><br>
+                    
+                    <input type="radio" name="check" id="check_3" value="C" autocomplete="off"> 
+                    <label id="lab_3" for="check_3"></label>
+                </form>
+
+                <p id="rezultati"></p>
+
+                <button id="botun1" onclick="sendere()"> Potvrdi </button>
+                <button id="botun2" onclick="resetare()"> Poništi </button>                        
+                <button id="botun3" onclick="resetare()"> Igraj ponovo </button>                        
+            </div>
+        </div>
+
+        <script src="quiz.js"></script>
+    </body>
+</html>

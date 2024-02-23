@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh; 
+    background-color: lightblue; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.okvir_pitanja {
+    background-color: lightcoral;
+    height: 800px;
+    width: 1200px;
+    border-radius: 50px;
+    border: 1px solid darkred;
+    box-shadow: 10px 10px 15px darkred;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.prog_bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#progress_bar {
+    appearance: none;
+    width: 95%;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 10px 10px 15px lightslategray;
+    background-color: lightgray;
+}
+
+#bar_counter {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px lightgray;
+    position: absolute;
+    top: 10px;
+}
+
+.pitanja {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#sva_pitanja {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+}
+
+#sva_pitanja p {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    height: 30px;
+    width: 30px;
+    color: orange;
+}
+
+input[type="radio"]:checked {
+    accent-color: darkred;
+}
+
+#rezultati {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+button {
+    width: 300px;
+    height: 100px;
+    border-radius: 50px;
+    margin-inline: 50px;
+    font-size: 40px;
+    border: none;
+    background-color: lightgray;
+    box-shadow: 5px 5px 15px lightslategray;
+}
+
+button:active {
+    background-color: orange;
+}
+
+button:hover {
+    box-shadow: 5px 5px 15px darkred;
+    transition: all linear 0.1s;
+}
+
+button:not(:hover) {
+    transition: all linear 0.1s;
+}
+
+#botun3 {
+    display: none;
+}
